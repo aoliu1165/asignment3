@@ -1,19 +1,19 @@
 # asignment3
-//The asignment3 of Academic Writing, Norms, and Ethics（c语言使用牛顿法找到函数 f(x) = x^2 - 4 的根）;
+//The asignment3 of Academic Writing, Norms, and Ethics（c语言使用牛顿法找到函数 f(x) = x^2 - 4 的根）
 #include <stdio.h>
 #include <math.h>
 
-// 目标函数;
+// 目标函数
 double target_function(double x) {
     return x * x - 4;
 }
 
-// 目标函数的导数;
+// 目标函数的导数
 double derivative_function(double x) {
     return 2 * x;
 }
 
-// 牛顿法函数;
+// 牛顿法函数
 double newton_method(double (*f)(double), double (*df)(double), double x0, double tol, int max_iter) {
     double x = x0;
     int iter_count = 0;
